@@ -1,0 +1,6 @@
+a. Intervalul de timp dintre 2 esantioane va fi 1/2000 = 0.0005 secunde.
+
+b. 
+2000 * 60 = 120,000 esantioane pe minut
+120000 * 60 = 7,200,000 esantioane pe ora
+7,200,000 * 4 = 28,800,000 biti = 3,600,000 bytes
