@@ -25,9 +25,11 @@ for phase in range(4):
 	snr *= 10
 
 axs[0].set_title("Original")
+axs[0].set_xlabel("Timp")
+axs[0].set_ylabel("Amplitudine")
 axs[1].set_title("Cu zgomot")
-plt.xlabel("Timp")
-plt.ylabel("Amplitudine")
+axs[1].set_xlabel("Timp")
+axs[1].set_ylabel("Amplitudine")
 
 plt.tight_layout()
 plt.savefig('ex2.pdf')
