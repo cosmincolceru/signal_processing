@@ -1,0 +1,4 @@
+B = 200Hz
+f_s > 2B => f_s > 400Hz
+
+Frecventa  minima  cu  care  trebuie  esantionat  semnalul este 400Hz.
