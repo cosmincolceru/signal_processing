@@ -1,0 +1,3 @@
+Am putea analiza periodicitatea semnalului si sa ne folosim de faptul ca traficul este crescut 5 zile pe saptamana si scazut in weekend pentru a calcula cate saptamani a fost inregitrat traficul.
+
+Metoda nu este perfecta deoarece frecventele difera de la saptamana la saptamana.
