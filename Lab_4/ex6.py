@@ -3,11 +3,11 @@ import numpy as np
 import matplotlib.pyplot as plt
 
 def main():
-    signal_file = scipy.io.wavfile.read("ex6.wav")
+    signal_file = scipy.io.wavfile.read("ex5.wav")
     signal = signal_file[1]
     N = len(signal)
 
-    group_size = int(0.01 * N)
+    group_size = int(0.005 * N)
     
     i = 0
     j = group_size
@@ -30,10 +30,10 @@ def main():
 
         spectogram = np.append(spectogram, new_column, axis=1)
 
-        i =  j  - (group_size // 2)
+        i =  j  - (group_size * 3 // 4)
         j = i + group_size
 
-    plt.imshow(spectogram)
+    plt.imshow(np.log10(spectogram))
     plt.savefig('ex6.png', format='png')  
     plt.savefig('ex6.pdf', format='pdf')
     plt.xlabel("Timp")

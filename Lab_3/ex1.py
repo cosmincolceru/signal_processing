@@ -19,9 +19,12 @@ for i in range(N):
     axs[i].plot(np.imag(F[i, :]))
     axs[i].set_title(f'Row {i+1}')
 
+print(np.allclose(np.eye(N), F.dot(F.T.conj()) / N, atol=1e-3))
+
+
 plt.tight_layout()
 
 plt.savefig('ex1.png', format='png')  
 plt.savefig('ex1.pdf', format='pdf')
 
-plt.show()
+# plt.show()
